@@ -1,0 +1,95 @@
+.work {
+  padding: 80px 200px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .work {
+    padding: 80px 50px;
+  }
+}
+
+.work ul {
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.work ul li a {
+  text-transform: capitalize;
+  color: #000000b3;
+  transition: 0.3s;
+}
+
+.work ul li a.active {
+  color: #53BEF3;
+  font-weight: 500;
+}
+
+.work ul li a:hover {
+  color: #53BEF3;
+}
+
+.work .img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.work .img-container .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.work .img-container .image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.work .img-container .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #53BEF3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.work .img-container .image:hover .overlay {
+  opacity: 1;
+}
+
+.work .img-container .image .overlay span {
+  font-weight: 500;
+  color: #4C4C4C;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.work .img-container .image .overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.work .img-container .image .overlay ul li a {
+  color: #4C4C4C;
+  font-size: 16px;
+}
+
+.work .img-container .image .overlay ul li a:hover {
+  color: white;
+}

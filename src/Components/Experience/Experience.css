@@ -1,0 +1,96 @@
+.experience {
+  padding: 80px 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    padding: 80px 50px;
+  }
+}
+
+.experience .experience-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.experience .experience-container .experience-item {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+.experience .experience-container .experience-item::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  width: 4px;
+  height: 130%;
+  background-color: #f2f3f7;
+}
+
+
+
+.experience .experience-container .experience-item .icon {
+  border-radius: 50%;
+  width: max-content;
+  height: max-content;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 7px #f2f3f7;
+  z-index: 100;
+
+}
+
+.experience .experience-container .experience-item .icon i {
+  color: white;
+  font-size: 22px;
+}
+
+.experience .experience-container .experience-item .info {
+  position: relative;
+  background-color: #F2F3F7;
+  padding: 20px;
+}
+
+.experience .experience-container .experience-item .info::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 18px solid;
+  border-color: transparent #F2F3F7 transparent transparent;
+  top: 13px;
+  left: -35px;
+}
+
+.experience .experience-container .experience-item .info a {
+  text-transform: capitalize;
+  color: #000000b3;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.experience .experience-container .experience-item .info a:hover {
+  color: #53BEF3;
+}
+
+.experience .experience-container .experience-item .info span {
+  font-size: 16px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.experience .experience-container .experience-item .info p {
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+  line-height: 1.8;
+}

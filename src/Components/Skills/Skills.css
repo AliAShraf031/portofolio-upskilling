@@ -1,0 +1,28 @@
+.skills {
+  padding: 150px 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 80px 50px;
+  }
+}
+
+.skills .progress-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.skills .progress-container .progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills .progress-container .progress-item span {
+  font-weight: 500;
+  color: #4c4c4c;
+  text-transform: capitalize;
+
+}
